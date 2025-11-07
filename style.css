@@ -1,0 +1,80 @@
+body {
+    background: radial-gradient(circle at center, #1e1e2f, #111);
+    color: #fff;
+    font-family: "Segoe UI", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.deck {
+    margin: 20px auto;
+    width: 200px;
+    height: 280px;
+    perspective: 1000px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    color: black;
+    position: relative;
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card.red {
+    color: #d22;
+}
+
+.card.black {
+    color: #111;
+}
+
+.card span {
+    font-size: 3em;
+}
+
+.back {
+    background: repeating-linear-gradient(
+        45deg,
+        #1c1c2b,
+        #1c1c2b 10px,
+        #2a2a45 10px,
+        #2a2a45 20px
+    );
+    color: #999;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #34ce57;
+}
